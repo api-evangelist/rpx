@@ -1,8 +1,23 @@
 aid: rpx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rpx.png
 name: RPX
-description: 'RPX is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'RPX Corporation is a San Francisco-based patent risk management company that provides
+  defensive patent aggregation, patent market intelligence, and litigation-risk services to member
+  companies. Its member platform is served from gated hosts (api.rpxcorp.com and docs.rpxcorp.com)
+  that require subscription authentication, so no public developer portal, OpenAPI, or documentation
+  surface is accessible for enrichment. Surfaced in the API Evangelist network as a portfolio company
+  of crv. Sector: enterprise / intellectual property.'
 url: https://raw.githubusercontent.com/api-evangelist/rpx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +27,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Enterprise
+- Patents
+- Intellectual Property
+- Risk Management
+- Legal
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/rpx-domain-security.yml
 - type: Website
   url: https://www.rpxcorp.com/
